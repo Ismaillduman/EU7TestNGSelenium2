@@ -15,30 +15,29 @@ public class PropertiesTest {
         String browserType = ConfigurationReader.get("browser");
 
         System.out.println("browserType = " + browserType);
+        System.out.println("Browser: "+ConfigurationReader.get("browser"));
 
-        String url1= ConfigurationReader.get("url");
+        String url = ConfigurationReader.get("url");
 
-        System.out.println("url1 = " + url1);
+        System.out.println("url = " + url);
 
-       // WebDriver driver= WebDriverFactory.getDriver(ConfigurationReader.get("browser"));
 
     }
 
     @Test
     public void OpenBrowserWithConf(){
-        WebDriver driver= WebDriverFactory.getDriver(ConfigurationReader.get("browser"));
+
+        WebDriver driver = WebDriverFactory.getDriver(ConfigurationReader.get("browser"));
 
         driver.get(ConfigurationReader.get("url"));
 
-        String username= ConfigurationReader.get("driver_username");
+        String username = ConfigurationReader.get("driver_username");
         String password = ConfigurationReader.get("driver_password");
 
         driver.findElement(By.id("prependedInput")).sendKeys(username);
-        driver.findElement(By.id("prependedInput2")).sendKeys(password + Keys.ENTER);
-
-
-
-
+        driver.findElement(By.id("prependedInput2")).sendKeys(password+ Keys.TAB);
 
     }
+
+
 }

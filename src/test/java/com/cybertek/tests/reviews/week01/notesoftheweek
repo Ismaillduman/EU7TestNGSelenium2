@@ -1,0 +1,14 @@
+1. mouse zoom Setting >editor.>general >mouse control
+
+how to find stuff:
+
+-ctrl +shift+ F looks inside the whole project
+
+-CTRL+F looks only this file
+
+2. When we create our selenium project what is the build tool?
+MAVEN ------built tool (Gradle, Ant)
+
+Manage dependencies (Libraries)
+
+Built: repeated steps when creating a project.

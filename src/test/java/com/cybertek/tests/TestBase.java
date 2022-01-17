@@ -18,15 +18,15 @@ public class TestBase {
     @BeforeMethod
     public void setUp() throws InterruptedException {
 
-        Thread.sleep(3000);
+        //Thread.sleep(3000);
         driver = Driver.get();
-        driver.get(ConfigurationReader.get("url"));
+
         driver.manage().window().maximize();
 
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         actions = new Actions(driver);
         wait = new WebDriverWait(driver,10);
-
+        driver.get(ConfigurationReader.get("url"));
 
     }
 

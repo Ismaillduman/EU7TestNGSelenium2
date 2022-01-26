@@ -6,14 +6,15 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class NegativeLoginTest extends TestBase {
+
     LoginPage loginPage = new LoginPage();
 
     @Test
     public void wrongPasswordTest(){
 
-       // WebDriver driver = WebDriverFactory.getDriver(ConfigurationReader.get("browser"));
+      // WebDriver driver = WebDriverFactory.getDriver(ConfigurationReader.get("browser"));
 
-      //  driver.get(ConfigurationReader.get("url"));
+        //driver.get(ConfigurationReader.get("url"));
 
         //String username = ConfigurationReader.get("driver_username");
         //String password = ConfigurationReader.get("driver_password");
@@ -26,6 +27,8 @@ public class NegativeLoginTest extends TestBase {
         loginPage.usernameInput.sendKeys("user1");
         loginPage.passwordInput.sendKeys("hellopassword");
         loginPage.loginBtn.click();
+
+
 
         Assert.assertEquals(driver.getCurrentUrl(), "https://qa1.vytrack.com/user/login");
 

@@ -19,7 +19,8 @@ this shows what kind of xml file is this, makes it xml runner for testng
 </suite>"`
 
 ## How to run multiple package ?
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+`<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Vytrack Automation" verbose="1">
 <test name="Vytrack Smoke Test">
 <packages>
@@ -27,34 +28,34 @@ this shows what kind of xml file is this, makes it xml runner for testng
 <package name="com.cybertek.tests.day11_webtables"></package>
 </packages>
 </test>
-</suite>
+</suite>`
 
 Note: xml runner looks for @Test annotatuin, if your test case under main method, it will NOT run.
 ## How to run everthing(all packages) --BATCH RUN--
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+`<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Vytrack Automation" verbose="1">
 <test name="Vytrack Smoke Test">
 <packages>
 <package name=".*"></package>
 </packages>
 </test>
-</suite>
+</suite>`
 
 ## How to run specfic class ?
 
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+`<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Vytrack Automation" verbose="1">
 <test name="Vytrack Smoke Test">
 <classes>
 <class name="com.cybertek.tests.day14_extent_reports.NegativeLoginTestWithReport"></class>
 </classes>
 </test>
-</suite>
+</suite>`
 
 NOTE: verbose is controlling log repors starting from 1, the more you add number it will give more details.
 
 ## How to run more than one classses (multiple classes)?
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+`<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Vytrack Automation" verbose="1">
 <test name="Vytrack Smoke Test">
 <classes>
@@ -62,12 +63,12 @@ NOTE: verbose is controlling log repors starting from 1, the more you add number
 <class name="com.cybertek.tests.day13_pom.PageSubtitleTest"></class>
 </classes>
 </test>
-</suite>
+</suite>`
 
 ## How to run specific test case from the class ?
 we use include tags.
 ## Include method is useful when you have multiple test cases in a class and you only want to run one or a few of them.
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+`<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Vytrack Automation" verbose="1">
 <test name="Vytrack Smoke Test">
 <classes>
@@ -78,12 +79,12 @@ we use include tags.
 </class>
 </classes>
 </test>
-</suite>
+</suite>`
 
 ## Exclude method
 Exclude methods is useful when you want to omit one testcase from class and run rest of the test cases.
 
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+`<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Vytrack Automation" verbose="1">
 <test name="Vytrack Smoke Test">
 <classes>
@@ -94,4 +95,4 @@ Exclude methods is useful when you want to omit one testcase from class and run 
 </class>
 </classes>
 </test>
-</suite>
+</suite>`

@@ -62,7 +62,7 @@ public class negativeLoginTestWithReport extends TestBase{
             loginPage.loginBtn.click();
 
             extentLogger.info("Verify url");
-            Assert.assertEquals(driver.getCurrentUrl(),"https://qa1.vytrack.com/user/login/QEW" );
+            Assert.assertEquals(driver.getCurrentUrl(),"https://qa1.vytrack.com/user/login" );
 
             extentLogger.pass("PASSED");
 

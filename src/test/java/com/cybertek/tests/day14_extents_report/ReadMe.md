@@ -15,3 +15,4 @@
 ## capture the exception and put inside the report
 
 . extentLogger.fail(result.getThrowable());
+

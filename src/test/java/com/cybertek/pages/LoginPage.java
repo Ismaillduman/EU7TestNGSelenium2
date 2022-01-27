@@ -58,8 +58,8 @@ public void loginAsStoreManager(){
 
 public void loginAsSalesmanager(){
 
-        String username = ConfigurationReader.get("salesmaneger_username");
-        String password = ConfigurationReader.get("salesmaneger_password");
+        String username = ConfigurationReader.get("salesmanager_username");
+        String password = ConfigurationReader.get("salesmanager_password");
 
         usernameInput.sendKeys(username);
         passwordInput.sendKeys(password);

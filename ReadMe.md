@@ -9,14 +9,14 @@ this shows what kind of xml file is this, makes it xml runner for testng
 
 ## How to run all test cases, classes inside the ine package ?
 
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+"<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Vytrack Automation" verbose="1">
 <test name="Vytrack Smoke Test">
 <packages>
 <package name="com.cybertek.tests.day14_extent_reports"></package>
 </packages>
 </test>
-</suite>
+</suite>"
 
 ## How to run multiple package ?
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">

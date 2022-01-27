@@ -3,7 +3,12 @@
     <test name="Vytrack smoke Test">
         
       <classes>
-          <class name="com.cybertek.tests.day14_extents_report.negativeLoginTestWithReport">
+          <class name="com.cybertek.tests.day11_WebTables.WebTablesExample">
+
+             <methods>
+                 <include name="getAllHeaders"></include>
+
+             </methods>
 
           </class>
       </classes>

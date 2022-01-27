@@ -23,11 +23,11 @@ public abstract class TestBase {
     protected Actions actions;
     protected   WebDriverWait wait;
     //this klass is used for starting and building reports
-    protected ExtentReports report;
+    protected static ExtentReports report;
     // this used to create HTML report file
-    protected ExtentHtmlReporter htmlReporter;
+    protected static ExtentHtmlReporter htmlReporter;
     // this will define a test enables adding logs authors test steps
-    protected ExtentTest extentLogger;
+    protected static ExtentTest extentLogger;
     @BeforeTest
     public void testSetUp(){
 
